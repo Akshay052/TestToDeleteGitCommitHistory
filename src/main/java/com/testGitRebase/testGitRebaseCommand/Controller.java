@@ -12,5 +12,8 @@ public class Controller {
 	public String helloWorld(@RequestParam String name) {
 		return "Hello "+name;
 	}
-	
+	@GetMapping("/secondHello")
+	public String helloWorldSecond(@RequestParam String name) {
+		return "secondHello "+name;
+	}
 }
